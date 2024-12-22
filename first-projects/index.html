@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <title>Functions: Task 1</title>
+    <style>
+      p {
+        color: purple;
+        margin: 0.5em 0;
+        font-size: large;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+    </style>
+    <!-- <link rel="stylesheet" href="../styles.css" /> -->
+     <link rel="" href="/exercises.js">
+  </head>
+
+  <body>
+    <section class="preview"></section>
+  </body>
+  <script>
+    const names = [
+      "Chris",
+      "Li Kang",
+      "Anne",
+      "Francesca",
+      "Mustafa",
+      "Tina",
+      "Bert",
+      "Jada",
+    ];
+    const para = document.createElement("p");
+  
+    // Add your code here
+    const section = document.querySelector(".preview");
+  
+    function chooseName() {
+      let randomNumber = Math.random() * (names.length - 0) + 0;
+      let selectedName = names[Math.floor(randomNumber)];
+      return selectedName;
+    }
+  
+    console.log(chooseName());
+
+    para.textContent = chooseName();
+  
+    // Don't edit the code below here!
+    section.innerHTML = " ";
+  
+    section.appendChild(para);
+  </script>
+</html>
